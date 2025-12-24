@@ -1,0 +1,10 @@
+<h1>{{ product.name }}</h1>
+<tr>
+  <td>{{ product.description }}</td>
+ <b><td>{{ product.price }} ₪</td></b>
+  <td>            {{ big >= 300 ? "perfect discount" :""}}{{ afterdiscount }} </td>
+  <td>    Number of purchases   {{ product.purchases }}</td><br>
+    <td>
+    <button (click)="onBuy()">קנה</button>
+  </td>
+</tr>

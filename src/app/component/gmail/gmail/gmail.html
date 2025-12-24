@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<input  type="text"  (mouseenter)="look()"  (mouseleave)="hide()"  [(ngModel)]="email" (keydown)="check($event)" (keyup.enter)="changeTaitle()">
+
+<button (click)="add()">@gmail.com</button>
+<p *ngIf="show">
+  חובה למלא כתובת מייל
+</p>

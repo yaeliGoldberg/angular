@@ -1,0 +1,8 @@
+<p>כניסה להתקנת תוכנות לימודיות על המחשב</p>
+<label> 
+    מספר זהות: <input type="text" [(ngModel)]="idNumber"> 
+</label> 
+<label> 
+    <input type="checkbox" [(ngModel)]="approved"> האם קראת ואישרת את התקנון 
+</label> 
+<button [disabled]="!approved">להיכנס</button>

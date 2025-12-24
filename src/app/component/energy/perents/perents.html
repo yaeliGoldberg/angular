@@ -1,0 +1,14 @@
+<h2>רשימת מוצרי חשמל</h2>
+
+<table>
+  <app-child
+    *ngFor="let p of products"
+    [product]="p"
+    (buyProduct)="onBuyProduct($event)">
+  </app-child>
+</table>
+<p>{{s}}</p>
+
+
+
+

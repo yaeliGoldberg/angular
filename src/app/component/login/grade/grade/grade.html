@@ -1,0 +1,11 @@
+<ul>
+
+    <li *ngFor="let item of diplomat" [ngClass]="{'noSucsess': item.grade<60}">
+
+        {{item.subject}}: {{item.grade}} -
+        {{ item.grade >= 60 ? 'עבר' : 'לא עבר' }}
+
+    </li>
+</ul>
+
+    <p>ממוצע הציונים: {{ getAverage() }}</p>
