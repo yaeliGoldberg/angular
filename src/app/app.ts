@@ -5,6 +5,7 @@ import { Grade } from './component/login/grade/grade/grade';
 import { Gmail } from "./component/gmail/gmail/gmail";
 import { Perents } from "./component/energy/perents/perents";
 import { Form } from "./component/form/form/form";
+import { Discount } from "../app/discount/discount";
 
 
 @Component({

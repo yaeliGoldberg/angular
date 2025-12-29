@@ -1,0 +1,16 @@
+<p>discount works!</p>
+<h1 *ngIf="langueth=='english'">HELLO</h1>
+<h1 *ngIf="langueth=='עיברית'">שלום</h1>
+
+<form #myForm="ngForm"  [ngStyle]="{direction:langueth=='english'? 'rtl':'ltr'}">
+  
+
+  <label>שם המזמין:</label>
+  <input type="text" name="name" ><br><br>
+
+  <label>כתובת:</label>
+  <input type="text" name="address" ><br><br>
+  <button type="submit" > שלח  </button>
+
+   
+</form>
