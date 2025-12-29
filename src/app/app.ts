@@ -4,11 +4,12 @@ import { Login } from './component/login/login';
 import { Grade } from './component/login/grade/grade/grade';
 import { Gmail } from "./component/gmail/gmail/gmail";
 import { Perents } from "./component/energy/perents/perents";
+import { Form } from "./component/form/form/form";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login,Grade,Gmail,Perents],
+  imports: [RouterOutlet,Login,Grade,Gmail,Perents,Form],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

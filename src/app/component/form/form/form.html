@@ -1,0 +1,39 @@
+<form #myForm="ngForm" (submit)="send()">
+    <label>תאריך:</label>
+  <input type="date" name="date" [(ngModel)]="date" required><br><br>
+
+  <label>שם המזמין:</label>
+  <input type="text" name="name" [(ngModel)]="name" required><br><br>
+
+  <label>כתובת:</label>
+  <input type="text" name="address" [(ngModel)]="address" required><br><br>
+
+  <label>עיר:</label>
+  <input type="text" name="city" [(ngModel)]="city"><br><br>
+    
+  <label>טלפון:</label>
+  <input type="text"
+         name="phone"
+         [(ngModel)]="phone"
+         minlength="9"
+         maxlength="10"
+         required><br><br>
+
+  <label>סיבת הזימון</label>
+  <select name="reason" [(ngModel)]="reason" required>
+    <option value="">-- בחרי --</option>
+    <option value="new">התקנת מוצר חדש</option>
+    <option value="warranty">תקלה בתקופת אחריות</option>
+    <option value="noWarranty">תקלה לאחר אחריות</option>
+  </select><br><br>
+
+    <label>תיאור התקלה</label>
+  <input type="text"
+         name="description"
+         [(ngModel)]="description"
+         [required]="reason !== 'new'"><br><br>
+
+<button type="submit" [disabled]="myForm.invalid"> שלח  </button>
+
+   
+</form>
